@@ -37,7 +37,7 @@ export default {}
   height: 100vh;
   background-image: url('../assets/img/login_bg.jpg') ;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;  
   .wrap {
     display: flex;
     flex-direction: column;
@@ -48,6 +48,7 @@ export default {}
     height: 800px;
     background-color: rgba(0,0,0,.7);
     border: 10px solid #888;
+    backdrop-filter: blur(5px);
   }
   h3 {
     font-size: 36px;
