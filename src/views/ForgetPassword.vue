@@ -1,25 +1,20 @@
 <template>
-  <div class="login">
+  <div class="forgetpassword">
     <div class="wrap">
-      <div class="item">
-        <h3>Sign in</h3>
+      <div class="title">
+        <div class="first-part">Reset your</div>
+        <div class="second-part">password</div>
+        <div class="explain">Enter your user account's verified email address and we will send you a password reset link.</div>
       </div>
       <div class="item">
         <input type="text" required />
-        <div class="label">Username</div>
+        <div class="label">Email</div>
       </div>
-      <div class="item">
-        <input :type="isShowPassword ? 'text' : 'password'" required />
-        <div class="label">Password</div>
-        <div class="eye" @click="showPassword">
-          <i :class="isShowPassword ? 'fas fa-eye' : 'fas fa-eye-slash'"></i>
-        </div>
-      </div>
-      <button class="signin-btn">Sign in</button>
+      <button class="submit-btn">Submit</button>
       <div class="other">
-        <div class="signup" @click="signUp">Sign up</div>
+        <div class="signin" @click="signIn">Sign in</div>
         <div class="divider">|</div>
-        <div class="forgetpassword" @click="forgetPassword">Forget Password</div>
+        <div class="signup" @click="signUp">Sign up</div>
       </div>
     </div>
   </div>
@@ -27,27 +22,19 @@
 
 <script>
 export default {
-  data() {
-    return {
-      isShowPassword: false
-    }
-  },
   methods: {
+    signIn() {
+      this.$router.push('Login')
+    },
     signUp() {
       this.$router.push('SignUp')
-    },
-    forgetPassword() {
-      this.$router.push('ForgetPassword')
-    },
-    showPassword() {
-      this.isShowPassword = !this.isShowPassword
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.login {
+.forgetpassword {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,9 +58,28 @@ export default {
     backdrop-filter: blur(5px);
     box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.7);
   }
-  h3 {
-    font-size: 57px;
-    color: #fff;
+  .title {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .first-part {
+      padding-bottom: 10px;
+      color: #fff;
+      font-size: 72px;
+    }
+    .second-part {
+      margin-top: 10px;
+      color: #fff;
+      font-size: 42px;
+    }
+    .explain {
+      padding-top: 10px;
+      font-size: 20px;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-style: italic;
+    }
   }
   .item {
     display: flex;
@@ -116,7 +122,7 @@ export default {
     }
   }
 
-  .signin-btn {
+  .submit-btn {
     width: 70%;
     height: 50px;
     padding: 0 0 5px 0;
@@ -135,13 +141,13 @@ export default {
     padding: 10px;
     color: #fff;
     letter-spacing: 1px;
-    .signup {
+    .signin {
       padding: 5px;
       cursor: pointer;
     }
     .divider {
     }
-    .forgetpassword {
+    .signup {
       padding: 5px;
       cursor: pointer;
     }
@@ -165,7 +171,7 @@ export default {
         }
       }
     }
-    h3 {
+    .title {
       .first-part {
         padding: 10px 0;
         color: #fff;

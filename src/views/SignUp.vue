@@ -1,8 +1,13 @@
 <template>
-  <div class="login">
+  <div class="signup">
     <div class="wrap">
+      <div class="title">
+        <div class="first-part">Create your</div>
+        <div class="second-part">account</div>
+      </div>
       <div class="item">
-        <h3>Sign in</h3>
+        <input type="text" required />
+        <div class="label">Email</div>
       </div>
       <div class="item">
         <input type="text" required />
@@ -15,9 +20,9 @@
           <i :class="isShowPassword ? 'fas fa-eye' : 'fas fa-eye-slash'"></i>
         </div>
       </div>
-      <button class="signin-btn">Sign in</button>
+      <button class="submit-btn">Submit</button>
       <div class="other">
-        <div class="signup" @click="signUp">Sign up</div>
+        <div class="signin" @click="signIn">Sign in</div>
         <div class="divider">|</div>
         <div class="forgetpassword" @click="forgetPassword">Forget Password</div>
       </div>
@@ -33,8 +38,8 @@ export default {
     }
   },
   methods: {
-    signUp() {
-      this.$router.push('SignUp')
+    signIn() {
+      this.$router.push('Login')
     },
     forgetPassword() {
       this.$router.push('ForgetPassword')
@@ -47,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.login {
+.signup {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,10 +76,23 @@ export default {
     backdrop-filter: blur(5px);
     box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.7);
   }
-  h3 {
-    font-size: 57px;
-    color: #fff;
+  .title {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .first-part {
+      padding: 10px 0;
+      color: #fff;
+      font-size: 72px;
+    }
+    .second-part {
+      margin-top: 10px;
+      color: #fff;
+      font-size: 42px;
+    }
   }
+
   .item {
     display: flex;
     width: 70%;
@@ -116,7 +134,7 @@ export default {
     }
   }
 
-  .signin-btn {
+  .submit-btn {
     width: 70%;
     height: 50px;
     padding: 0 0 5px 0;
@@ -135,7 +153,7 @@ export default {
     padding: 10px;
     color: #fff;
     letter-spacing: 1px;
-    .signup {
+    .signin {
       padding: 5px;
       cursor: pointer;
     }
@@ -165,7 +183,7 @@ export default {
         }
       }
     }
-    h3 {
+    .title {
       .first-part {
         padding: 10px 0;
         color: #fff;
