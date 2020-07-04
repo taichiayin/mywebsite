@@ -24,7 +24,7 @@
 export default {
   methods: {
     signIn() {
-      this.$router.push('Login')
+      this.$router.push('SignIn')
     },
     signUp() {
       this.$router.push('SignUp')
@@ -144,8 +144,6 @@ export default {
     .signin {
       padding: 5px;
       cursor: pointer;
-    }
-    .divider {
     }
     .signup {
       padding: 5px;

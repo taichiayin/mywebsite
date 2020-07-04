@@ -15,7 +15,7 @@
           <i :class="isShowPassword ? 'fas fa-eye' : 'fas fa-eye-slash'"></i>
         </div>
       </div>
-      <button class="signin-btn">Sign in</button>
+      <button class="signin-btn" @click="signIn">Sign in</button>
       <div class="other">
         <div class="signup" @click="signUp">Sign up</div>
         <div class="divider">|</div>
@@ -35,6 +35,9 @@ export default {
   methods: {
     signUp() {
       this.$router.push('SignUp')
+    },
+    signIn() {
+      this.$router.push('/welcome')
     },
     forgetPassword() {
       this.$router.push('ForgetPassword')
@@ -138,8 +141,6 @@ export default {
     .signup {
       padding: 5px;
       cursor: pointer;
-    }
-    .divider {
     }
     .forgetpassword {
       padding: 5px;

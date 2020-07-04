@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     signIn() {
-      this.$router.push('Login')
+      this.$router.push('SignIn')
     },
     forgetPassword() {
       this.$router.push('ForgetPassword')
@@ -156,8 +156,6 @@ export default {
     .signin {
       padding: 5px;
       cursor: pointer;
-    }
-    .divider {
     }
     .forgetpassword {
       padding: 5px;
