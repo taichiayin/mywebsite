@@ -37,7 +37,9 @@ export default {
       this.$router.push('SignUp')
     },
     signIn() {
+      this.$store.commit('setToken',true)      
       this.$router.push('/welcome')
+
     },
     forgetPassword() {
       this.$router.push('ForgetPassword')
