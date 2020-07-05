@@ -47,10 +47,8 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  // background-color: #21d4fd;
-  // background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
-  // background-color: #08AEEA;
   background-image: linear-gradient(270deg, #08aeea 0%, #ffffff 100%);
+  z-index: 2;
 
   .breadCrumbs {
     display: flex;
