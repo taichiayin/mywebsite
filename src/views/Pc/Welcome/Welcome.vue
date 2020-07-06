@@ -82,9 +82,7 @@ export default {
   scroll-behavior: smooth;
   overflow: hidden;
   overflow-y: scroll;
-  &::-webkit-scrollbar {
-		display: none;
-	}
+
   .wrap {
     width: 100%;
     display: flex;

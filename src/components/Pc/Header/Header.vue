@@ -13,7 +13,7 @@
     <div class="header-nav">
       <router-link to="/welcome">WELCOME</router-link>
       <router-link to="/resume">RESUME</router-link>
-      <router-link to="/UIComponents">UIComponents</router-link>
+      <router-link to="/UIComponents">UICOMPONENTS</router-link>
       <router-link to="/projects">PROJECTS</router-link>
       <router-link to="/contact">CONTACT</router-link>
     </div>
@@ -88,7 +88,9 @@ export default {
     justify-content: center;
     align-items: center;
     a {
+      // display: block;
       padding: 0 10px;
+      line-height: 50px;
       color: #555555;
       position: relative;
       transform: translateY(0px);
@@ -103,13 +105,13 @@ export default {
         height: 0;
         left: 50%;
         right: 50%;
-        bottom: -5px;
+        bottom: 10px;
         border-bottom: 1px solid #fff;
         transition: 0.5s;
       }
       &:hover::after {
-        left: 0;
-        right: 0;
+        left: 10px;
+        right: 10px;
       }
     }
   }

@@ -2,11 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-body::-webkit-scrollbar {
-	display: none;
-}
-body {
-	-ms-overflow-style: none;
+*::-webkit-scrollbar {
+	display:none
 }
 
 html, body, div, span, applet, object, iframe,
