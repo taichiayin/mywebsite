@@ -1,12 +1,14 @@
 const PC = [
   {
     path: '/',
+    redirect: {
+      name: 'Welcome',
+    },
     component: (resolve) => require(['@/views/Pc/layout'], resolve),
     children: [
       // {
-      //   path: '/home',
-      //   name: 'Home',
-      //   component: (resolve) => require(['@/views/Pc/Home'], resolve),
+      //   path: '/',
+      //   component: (resolve) => require(['@/views/Pc/Welcome/Welcome'], resolve),
       //   meta: { requiresAuth: true } // 需驗證
       // },
       {
