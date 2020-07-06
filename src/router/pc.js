@@ -26,10 +26,10 @@ const PC = [
         meta: { requiresAuth: true } // 需驗證
       },
       {
-        path: '/sketch',
-        name: 'Sketch',
+        path: '/uicomponents',
+        name: 'UIComponents',
         meta: {},
-        component: (resolve) => require(['@/views/Pc/Sketch/Sketch'], resolve),
+        component: (resolve) => require(['@/views/Pc/UIComponents/UIComponents'], resolve),
         meta: { requiresAuth: true } // 需驗證
       },
       {
