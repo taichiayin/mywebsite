@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="text">
-      Copyright 2020 All rights reserved | Davis Tai
+      Copyright &copy; 2020 All rights reserved | Davis Tai
     </div>
     <i class="fab fa-linkedin"></i>
   </div>

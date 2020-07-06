@@ -110,9 +110,6 @@ export default {
         }
       }
     }
-    .thanku {
-      // background-color: #ccc;
-    }
   }
 }
 </style>
