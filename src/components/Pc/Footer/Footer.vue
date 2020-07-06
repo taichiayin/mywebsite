@@ -24,6 +24,7 @@ export default {}
   font-size: 18px;
   color: #A2E1F7;
   background-color: #333333;
+  z-index: 3;
 }
 .fa-linkedin{
   margin-left: 10px;

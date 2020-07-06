@@ -1,12 +1,14 @@
 const PC = [
   {
     path: '/',
+    redirect: {
+      name: 'Welcome',
+    },
     component: (resolve) => require(['@/views/Pc/layout'], resolve),
     children: [
       // {
-      //   path: '/home',
-      //   name: 'Home',
-      //   component: (resolve) => require(['@/views/Pc/Home'], resolve),
+      //   path: '/',
+      //   component: (resolve) => require(['@/views/Pc/Welcome/Welcome'], resolve),
       //   meta: { requiresAuth: true } // 需驗證
       // },
       {
@@ -24,10 +26,10 @@ const PC = [
         meta: { requiresAuth: true } // 需驗證
       },
       {
-        path: '/sketch',
-        name: 'Sketch',
+        path: '/uicomponents',
+        name: 'UIComponents',
         meta: {},
-        component: (resolve) => require(['@/views/Pc/Sketch/Sketch'], resolve),
+        component: (resolve) => require(['@/views/Pc/UIComponents/UIComponents'], resolve),
         meta: { requiresAuth: true } // 需驗證
       },
       {

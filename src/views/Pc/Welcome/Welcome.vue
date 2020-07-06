@@ -83,8 +83,8 @@ export default {
   overflow: hidden;
   overflow-y: scroll;
   &::-webkit-scrollbar {
-    display: none;
-  }
+		display: none;
+	}
   .wrap {
     width: 100%;
     display: flex;

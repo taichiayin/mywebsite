@@ -13,7 +13,7 @@
     <div class="header-nav">
       <router-link to="/welcome">WELCOME</router-link>
       <router-link to="/resume">RESUME</router-link>
-      <router-link to="/sketch">SKETCH</router-link>
+      <router-link to="/UIComponents">UIComponents</router-link>
       <router-link to="/projects">PROJECTS</router-link>
       <router-link to="/contact">CONTACT</router-link>
     </div>
