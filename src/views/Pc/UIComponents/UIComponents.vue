@@ -1,7 +1,7 @@
 <template>
 	<div class="uicomponents">
 		<div class="search">
-			<input type="text" />
+			<input type="text" v-model="condition" placeholder="請輸入名稱"/>
 			<button><i class="fas fa-search"></i></button>
 		</div>
 		<div class="main">
@@ -29,6 +29,7 @@ export default {
 		return {
 			isShowDemo: false,
 			name: '',
+      condition:''
 			// poster: '',
 			// desc: '',
 			// date: '',
