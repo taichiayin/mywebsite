@@ -4,6 +4,7 @@ import App from '@/App.vue'
 import store from '@/store'
 import * as Tools from '../util/tool'
 import pc from './pc.js'
+import mobile from './mobile.js'
 
 Vue.use(VueRouter)
 

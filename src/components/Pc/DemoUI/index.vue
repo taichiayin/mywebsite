@@ -2,7 +2,7 @@
 	<div class="demoui">
 		<i class="fas fa-times" @click="onClose"></i>
 		<UICalculator v-if="name == 'Calculator'" />
-    <UISwitch v-if="name == 'Switch'" />
+		<UISwitch v-if="name == 'Switch'" />
 	</div>
 </template>
 
@@ -11,11 +11,11 @@ import UICalculator from '@/components/Pc/UI/Calculator.vue'
 import UISwitch from '@/components/Pc/UI/Switch.vue'
 
 export default {
-  name: 'DemoUI',
-  components:{
-    UICalculator,
-    UISwitch
-  },
+	name: 'DemoUI',
+	components: {
+		UICalculator,
+		UISwitch,
+	},
 	props: {
 		name: String,
 	},
