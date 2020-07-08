@@ -7,7 +7,7 @@
 
       <div v-for="(item, index) in crumbs" :key="index" class="path">
         <div class="slash">/</div>
-        <div class="text" v-if="true">{{ item }}</div>
+        <div v-if="true" class="text">{{ item }}</div>
       </div>
     </div>
     <div class="header-nav">
@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     crumbs() {
-      let pathArray = this.$route.path.split('/')
+      const pathArray = this.$route.path.split('/')
       pathArray.shift()
       return pathArray
     }

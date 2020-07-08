@@ -5,14 +5,14 @@
         <h3>Sign in</h3>
       </div>
       <div class="item">
-        <input type="text" required />
+        <input type="text" required>
         <div class="label">Username</div>
       </div>
       <div class="item">
-        <input :type="isShowPassword ? 'text' : 'password'" required />
+        <input :type="isShowPassword ? 'text' : 'password'" required>
         <div class="label">Password</div>
         <div class="eye" @click="showPassword">
-          <i :class="isShowPassword ? 'fas fa-eye' : 'fas fa-eye-slash'"></i>
+          <i :class="isShowPassword ? 'fas fa-eye' : 'fas fa-eye-slash'" />
         </div>
       </div>
       <button class="signin-btn" @click="signIn">Sign in</button>
@@ -37,9 +37,8 @@ export default {
       this.$router.push('SignUp')
     },
     signIn() {
-      this.$store.commit('setToken',true)      
+      this.$store.commit('setToken', true)
       this.$router.push('/welcome')
-
     },
     forgetPassword() {
       this.$router.push('ForgetPassword')

@@ -3,7 +3,7 @@
     <div class="text">
       Copyright &copy; 2020 All rights reserved | Davis Tai
     </div>
-    <a href="http://linkedin.com/in/tai-chiaying-8106b3145" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="http://linkedin.com/in/tai-chiaying-8106b3145" target="_blank"><i class="fab fa-linkedin" /></a>
   </div>
 </template>
 

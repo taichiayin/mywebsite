@@ -85,7 +85,8 @@ export default {
     },
     // 點擊等於符號
     calculate() {
-      let result = this.equation.replace(new RegExp('x', 'g'), '*').replace(new RegExp('÷', 'g'), '/')
+      const result = this.equation.replace(new RegExp('x', 'g'), '*').replace(new RegExp('÷', 'g'), '/')
+      // eslint-disable-next-line no-eval
       this.equation = parseFloat(eval(result).toFixed(9)).toString()
       this.isDecimalAdded = false
       this.isDecimalAdded = false
@@ -125,7 +126,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:linear-gradient(135deg, #f6ab3e 0%, #8037f6 100%);
+  background: linear-gradient(135deg, #f6ab3e 0%, #8037f6 100%);
   .wrap {
     display: flex;
     justify-content: center;
@@ -139,7 +140,7 @@ export default {
       box-sizing: border-box;
       border-radius: 10px;
       color: #555;
-      box-shadow: -8px -8px 16px -10px rgba(150, 150, 150, .8), 8px 8px 16px -10px rgba(0, 0, 0, 0.15);
+      box-shadow: -8px -8px 16px -10px rgba(150, 150, 150, 0.8), 8px 8px 16px -10px rgba(0, 0, 0, 0.15);
       .result {
         padding: 5px;
         width: 320px;

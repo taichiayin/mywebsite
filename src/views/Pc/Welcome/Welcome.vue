@@ -16,7 +16,7 @@
       <div class="page fourth">
         <div class="text">
           <p>Familiar with</p>
-          HTML, Javascript, CSS, VueJs <br />
+          HTML, Javascript, CSS, VueJs <br>
           <p>and so on...</p>
         </div>
       </div>
@@ -38,24 +38,24 @@ export default {
   },
   methods: {
     handleScroll() {
-      let el = document.querySelector('.welcome')
+      const el = document.querySelector('.welcome')
       // let elHight = document.querySelector('.wrap').clientHeight
       // console.log(elHight)
-      let heightPerPage = (document.querySelector('.wrap').clientHeight - 50) / 5
+      const heightPerPage = (document.querySelector('.wrap').clientHeight - 50) / 5
       // console.log(heightPerPage)
-      let elArray = document.querySelectorAll('.page')
+      const elArray = document.querySelectorAll('.page')
       // console.log(elArray)
       // console.log(document.documentElement.scrollTop)
-      let valInt = parseInt(el.scrollTop / heightPerPage)
-      let valOpacity = (el.scrollTop % heightPerPage) / heightPerPage
+      // const valInt = parseInt(el.scrollTop / heightPerPage)
+      const valOpacity = (el.scrollTop % heightPerPage) / heightPerPage
       // 是否超過一半，超過一半透明度要轉換
-      let isToggle = el.scrollTop % heightPerPage > heightPerPage / 2
+      const isToggle = el.scrollTop % heightPerPage > heightPerPage / 2
       console.log(isToggle)
       // console.log(valInt)
 
       console.log(document.querySelector('.welcome').scrollTop)
       elArray.forEach((el, index) => {
-        if (index % 2 == 0) {
+        if (index % 2 === 0) {
           if (!isToggle) {
             elArray[index].style.opacity = 1 - valOpacity * 2
           } else {

@@ -6,18 +6,18 @@
         <div class="second-part">account</div>
       </div>
       <div class="item">
-        <input type="text" required />
+        <input type="text" required>
         <div class="label">Email</div>
       </div>
       <div class="item">
-        <input type="text" required />
+        <input type="text" required>
         <div class="label">Username</div>
       </div>
       <div class="item">
-        <input :type="isShowPassword ? 'text' : 'password'" required />
+        <input :type="isShowPassword ? 'text' : 'password'" required>
         <div class="label">Password</div>
         <div class="eye" @click="showPassword">
-          <i :class="isShowPassword ? 'fas fa-eye' : 'fas fa-eye-slash'"></i>
+          <i :class="isShowPassword ? 'fas fa-eye' : 'fas fa-eye-slash'" />
         </div>
       </div>
       <button class="submit-btn">Submit</button>
@@ -58,10 +58,10 @@ export default {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: url('../assets/img/login_bg.jpg');
+  background-image: url("../assets/img/login_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 
   .wrap {
     display: flex;
@@ -126,7 +126,7 @@ export default {
       padding: 14px 0 0 5px;
       background-color: transparent;
       border-bottom: 1px solid #ccc;
-      font-family: 'Anton', sans-serif;
+      font-family: "Anton", sans-serif;
       &:focus ~ .label,
       &:valid ~ .label {
         top: 15px;
@@ -143,7 +143,7 @@ export default {
     color: rgba(100, 150, 150, 1);
     background-color: #fff;
     cursor: pointer;
-    font-family: 'Notable', sans-serif;
+    font-family: "Notable", sans-serif;
     box-shadow: 1px 1px 5px rgba(50, 100, 100, 1);
   }
   .other {

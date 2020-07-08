@@ -4,26 +4,26 @@
       <transition name="slide" mode="out-in">
         <div v-if="type === 'linkedin'" key="linkedin" class="slide-img linkedin">
           <!-- <img src="https://fakeimg.pl/700x700/?text=linkedin&font=lobster" alt="" /> -->
-          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-linkedin" />
         </div>
 
         <div v-else-if="type === 'phone'" key="phone" class="slide-img phone">
           <!-- <img src="https://fakeimg.pl/700x700/?text=phone&font=lobster" alt="" /> -->
-          <i class="fas fa-mobile-alt"></i>
+          <i class="fas fa-mobile-alt" />
         </div>
 
         <div v-else-if="type === 'mail'" key="mail" class="slide-img mail">
           <!-- <img src="https://fakeimg.pl/700x700/?text=mail&font=lobster" alt="" /> -->
-          <i class="fas fa-envelope-open-text"></i>
+          <i class="fas fa-envelope-open-text" />
         </div>
       </transition>
     </div>
     <div class="contact-right">
       <div class="title">Contact me</div>
       <div class="icons">
-        <i class="fab fa-linkedin" @click="changeType('linkedin')"></i>
-        <i class="fas fa-phone-square-alt" @click="changeType('phone')"></i>
-        <i class="fas fa-envelope" @click="changeType('mail')"></i>
+        <i class="fab fa-linkedin" @click="changeType('linkedin')" />
+        <i class="fas fa-phone-square-alt" @click="changeType('phone')" />
+        <i class="fas fa-envelope" @click="changeType('mail')" />
       </div>
       <div class="contant">
         <div v-if="type === 'linkedin'" class="item linkedin">
@@ -34,8 +34,8 @@
           <span>Phone Number: +886 928-427-552</span>
         </div>
         <div v-if="type === 'mail'" class="item mail">
-          <input class="name" type="text" placeholder="Your name" />
-          <input class="address" type="text" placeholder="Your address" />
+          <input class="name" type="text" placeholder="Your name">
+          <input class="address" type="text" placeholder="Your address">
           <textarea placeholder="Write something" />
           <button class="submit">SUMBIT</button>
         </div>
@@ -83,26 +83,10 @@ export default {
       -webkit-text-fill-color: transparent;
 
       &.linkedin {
-        // position: relative;
-        // transform: translateX(-100%);
-        /* transition: 0.5s; */
-        // &.active {
-        //   transform: translateX(0);
-        // }
       }
       &.phone {
-        // position: relative;
-        // transform: translateX(-100%);
-        // &.active {
-        //   transform: translateX(0);
-        // }
       }
       &.mail {
-        // position: relative;
-        // transform: translateX(-100%);
-        // &.active {
-        //   transform: translateX(0);
-        // }
       }
     }
   }

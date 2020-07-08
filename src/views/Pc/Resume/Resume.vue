@@ -1,127 +1,127 @@
 <template>
-	<div class="resume">
-		<div class="banner">
-			<div class="lastname">Davis</div>
-			<div class="firstname">Tai</div>
-			<p>Front End Engineer</p>
-		</div>
-		<div class="left-side">
-			<div class="avatar">
-				<img src="@/assets/img/myavatar.jpg" alt="davis tai avatar" />
-			</div>
-			<div class="contact">
-				<h3>CONTACT</h3>
-				<ul>
-					<li><i class="fas fa-phone"></i><span>0928-427-552</span></li>
-					<li><i class="fas fa-envelope"></i><span>taichiayin@livemail.tw</span></li>
-					<li><i class="fas fa-home"></i><span>New Taipei City</span></li>
-					<li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/tai-chiaying-8106b3145/">Tai ChiaYing</a></li>
-					<li><i class="fab fa-github-square"></i><a href="https://github.com/taichiayin/myfirstrep.git">myCV</a></li>
-				</ul>
-			</div>
-			<div class="aboutme">
-				<h3>ABOUT ME</h3>
-				<p>Accountability, Logicality, Teamwork, Good communication and coordination capabilities</p>
-			</div>
-		</div>
-		<div class="right-side">
-			<div class="detail-container">
-				<div class="detail-left">
-					<h3>WORK EXPERIENCE</h3>
-					<div class="workexp">
-						<div class="item first">
-							<div class="years">2013</div>
-							<div class="job">
-								<div class="jobtitle">Dimerco Data System Corp / System Analyst, RD</div>
-								<div class="jobcontext">
-									<ul>
-										<li>- Data structure analyst</li>
-										<li>- System ananlyst, data interchange with banking EAI、MainFrame by Socket and Message Queue</li>
-										<li>- Established real estate values trust service in Bank, BOT、CHB、UB etc...</li>
-										<li>- Established realtime response message service</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="item secpnd">
-							<div class="years">2017</div>
-							<div class="job">
-								<div class="jobtitle">Lanner Electronics Inc. / Senior Software Engineer, IT</div>
-								<div class="jobcontext">
-									<ul>
-										<li>- Developed internal system (BPM, Business Process Management), integration with SAP(ERP/HR ) system</li>
-										<li>- Established RMA system</li>
-										<li>- B2B Solution by WebMethod</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="item third">
-							<div class="years">2018</div>
-							<div class="job">
-								<div class="jobtitle">Tymphany Corporation / Senior Software Engineer, IT</div>
-								<div class="jobcontext">
-									<ul>
-										<li>- Developed internal system (BPM, Business Process Management)</li>
-										<li>- Integration ERP/HRM inforecord from SAP</li>
-										<li>- Make convenient business process MRO</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="item forth">
-							<div class="years">Present</div>
-							<div class="job">
-								<div class="jobtitle">Solar Tech Inc. / Front End Engineer, RD</div>
-								<div class="jobcontext">
-									<ul>
-										<li>- Stream video</li>
-										<li>- Chat room</li>
-										<li>- IM</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="education">
-					<h3>EDUCATION</h3>
-					<p>Tamkang University | Bachelor's degree</p>
-					<p>Computer Science and Information Engineering，CSIE</p>
-				</div>
-				<div class="skills">
-					<h3>Skills</h3>
-					<div class="skills-wrap">
-						<div class="skill-item html">
-							<div class="circle"></div>
-							<div class="mask-circle">
-								<div class="skillname">HTML</div>
-							</div>
-						</div>
-						<div class="skill-item css">
-							<div class="circle"></div>
-							<div class="mask-circle">
-								<div class="skillname">CSS</div>
-							</div>
-						</div>
-						<div class="skill-item js">
-							<div class="circle"></div>
-							<div class="mask-circle">
-								<div class="skillname">JS</div>
-							</div>
-						</div>
-						<div class="skill-item vue">
-							<div class="circle"></div>
-							<div class="mask-circle">
-								<div class="skillname">VueJS</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="detail-right"></div>
-			</div>
-		</div>
-	</div>
+  <div class="resume">
+    <div class="banner">
+      <div class="lastname">Davis</div>
+      <div class="firstname">Tai</div>
+      <p>Front End Engineer</p>
+    </div>
+    <div class="left-side">
+      <div class="avatar">
+        <img src="@/assets/img/myavatar.jpg" alt="davis tai avatar">
+      </div>
+      <div class="contact">
+        <h3>CONTACT</h3>
+        <ul>
+          <li><i class="fas fa-phone" /><span>0928-427-552</span></li>
+          <li><i class="fas fa-envelope" /><span>taichiayin@livemail.tw</span></li>
+          <li><i class="fas fa-home" /><span>New Taipei City</span></li>
+          <li><i class="fab fa-linkedin" /><a href="https://www.linkedin.com/in/tai-chiaying-8106b3145/">Tai ChiaYing</a></li>
+          <li><i class="fab fa-github-square" /><a href="https://github.com/taichiayin/myfirstrep.git">myCV</a></li>
+        </ul>
+      </div>
+      <div class="aboutme">
+        <h3>ABOUT ME</h3>
+        <p>Accountability, Logicality, Teamwork, Good communication and coordination capabilities</p>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="detail-container">
+        <div class="detail-left">
+          <h3>WORK EXPERIENCE</h3>
+          <div class="workexp">
+            <div class="item first">
+              <div class="years">2013</div>
+              <div class="job">
+                <div class="jobtitle">Dimerco Data System Corp / System Analyst, RD</div>
+                <div class="jobcontext">
+                  <ul>
+                    <li>- Data structure analyst</li>
+                    <li>- System ananlyst, data interchange with banking EAI、MainFrame by Socket and Message Queue</li>
+                    <li>- Established real estate values trust service in Bank, BOT、CHB、UB etc...</li>
+                    <li>- Established realtime response message service</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item secpnd">
+              <div class="years">2017</div>
+              <div class="job">
+                <div class="jobtitle">Lanner Electronics Inc. / Senior Software Engineer, IT</div>
+                <div class="jobcontext">
+                  <ul>
+                    <li>- Developed internal system (BPM, Business Process Management), integration with SAP(ERP/HR ) system</li>
+                    <li>- Established RMA system</li>
+                    <li>- B2B Solution by WebMethod</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item third">
+              <div class="years">2018</div>
+              <div class="job">
+                <div class="jobtitle">Tymphany Corporation / Senior Software Engineer, IT</div>
+                <div class="jobcontext">
+                  <ul>
+                    <li>- Developed internal system (BPM, Business Process Management)</li>
+                    <li>- Integration ERP/HRM inforecord from SAP</li>
+                    <li>- Make convenient business process MRO</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item forth">
+              <div class="years">Present</div>
+              <div class="job">
+                <div class="jobtitle">Solar Tech Inc. / Front End Engineer, RD</div>
+                <div class="jobcontext">
+                  <ul>
+                    <li>- Stream video</li>
+                    <li>- Chat room</li>
+                    <li>- IM</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="education">
+          <h3>EDUCATION</h3>
+          <p>Tamkang University | Bachelor's degree</p>
+          <p>Computer Science and Information Engineering，CSIE</p>
+        </div>
+        <div class="skills">
+          <h3>Skills</h3>
+          <div class="skills-wrap">
+            <div class="skill-item html">
+              <div class="circle" />
+              <div class="mask-circle">
+                <div class="skillname">HTML</div>
+              </div>
+            </div>
+            <div class="skill-item css">
+              <div class="circle" />
+              <div class="mask-circle">
+                <div class="skillname">CSS</div>
+              </div>
+            </div>
+            <div class="skill-item js">
+              <div class="circle" />
+              <div class="mask-circle">
+                <div class="skillname">JS</div>
+              </div>
+            </div>
+            <div class="skill-item vue">
+              <div class="circle" />
+              <div class="mask-circle">
+                <div class="skillname">VueJS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-right" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -418,7 +418,7 @@ export default {}
 			transform: rotate(270deg);
 		}
 	}
-	/* 
+	/*
 @keyframes spinleft {
     50% {
         background-image: linear-gradient(90deg, #666 50%, transparent 0);

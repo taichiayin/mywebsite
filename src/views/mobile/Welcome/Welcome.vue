@@ -1,17 +1,17 @@
 <template>
-	<div class="welcome" @scroll="handleScroll">
-		<div class="wrap">
-			Please, use PC to visit
-		</div>
-	</div>
+  <div class="welcome" @scroll="handleScroll">
+    <div class="wrap">
+      Please, use PC to visit
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-	mounted() {
-		// this.watchScroll()?
-	},
-	methods: {},
+  mounted() {
+    // this.watchScroll()?
+  },
+  methods: {}
 }
 </script>
 

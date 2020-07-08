@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import App from '@/App.vue'
+// import App from '@/App.vue'
 import store from '@/store'
 import * as Tools from '../util/tool'
 import pc from './pc.js'

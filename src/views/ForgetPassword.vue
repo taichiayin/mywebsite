@@ -7,7 +7,7 @@
         <div class="explain">Enter your user account's verified email address and we will send you a password reset link.</div>
       </div>
       <div class="item">
-        <input type="text" required />
+        <input type="text" required>
         <div class="label">Email</div>
       </div>
       <button class="submit-btn">Submit</button>

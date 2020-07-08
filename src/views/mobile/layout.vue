@@ -1,14 +1,14 @@
 <template>
-	<div class="mobile-layout">
-		<!-- <Header /> -->
-		<!-- <transition name="fade" mode="out-in"> -->
-		<router-view />
-		<!-- </transition> -->
-		<!-- <Footer /> -->
-		<!-- <div class="text">
+  <div class="mobile-layout">
+    <!-- <Header /> -->
+    <!-- <transition name="fade" mode="out-in"> -->
+    <router-view />
+    <!-- </transition> -->
+    <!-- <Footer /> -->
+    <!-- <div class="text">
       Please, use PC to visit
     </div> -->
-	</div>
+  </div>
 </template>
 
 <script>
@@ -16,17 +16,17 @@
 // import Footer from '@/components/Pc/Footer/Footer.vue'
 
 export default {
-	components: {
-		// Header,
-		// Footer,
-	},
+  components: {
+    // Header,
+    // Footer,
+  }
 }
 </script>
 
 <style>
 .pc-layout {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* .fade-enter-active,
