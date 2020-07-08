@@ -1,14 +1,14 @@
 <template>
 	<div class="uicomponents">
 		<div class="search">
-			<input type="text" v-model="condition" placeholder="請輸入名稱"/>
+			<input type="text" v-model="searchCondition" placeholder="Enter name" />
 			<button><i class="fas fa-search"></i></button>
 		</div>
 		<div class="main">
 			<div class="wrap">
-				<div class="item" v-for="(item, index) in uiData" :key="index" @click="onOpen(item)">
+				<div class="item" v-for="(item, index) in filterData" :key="index" @click="onOpen(item)">
 					<div class="post-img"><img :src="item.poster" alt="" /></div>
-					<div class="desc">{{ item.desc }}</div>
+					<div class="desc">{{ item.name }}</div>
 					<div class="date">{{ item.date }}</div>
 				</div>
 			</div>
@@ -29,7 +29,7 @@ export default {
 		return {
 			isShowDemo: false,
 			name: '',
-      condition:''
+			searchCondition: '',
 			// poster: '',
 			// desc: '',
 			// date: '',
@@ -38,6 +38,14 @@ export default {
 	computed: {
 		uiData() {
 			return data
+		},
+		filterData() {
+			const searchCondition = this.searchCondition.toLowerCase()
+			return this.searchCondition.trim() !== ''
+				? this.uiData.filter((element) => {
+						return element.name.toLowerCase().indexOf(searchCondition) > -1
+				  })
+				: this.uiData
 		},
 	},
 	methods: {
