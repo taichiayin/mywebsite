@@ -3,7 +3,7 @@
     <div class="text">
       Copyright &copy; 2020 All rights reserved | Davis Tai
     </div>
-    <i class="fab fa-linkedin"></i>
+    <a href="http://linkedin.com/in/tai-chiaying-8106b3145" target="_blank"><i class="fab fa-linkedin"></i></a>
   </div>
 </template>
 
@@ -22,13 +22,14 @@ export default {}
   bottom: 0;
   left: 0;
   font-size: 18px;
-  color: #A2E1F7;
+  color: #a2e1f7;
   background-color: #333333;
   z-index: 3;
 }
-.fa-linkedin{
+.fa-linkedin {
   margin-left: 10px;
   font-size: 24px;
+  color: #a2e1f7;
   cursor: pointer;
 }
 </style>
