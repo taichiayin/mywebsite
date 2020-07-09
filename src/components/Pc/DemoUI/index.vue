@@ -5,6 +5,8 @@
     <UISwitch v-if="name == 'Switch'" />
     <UIShare v-if="name == 'Share'" />
     <UIProductCard v-if="name == 'ProductCard'" />
+    <UILoadingDot v-if="name == 'LoadingDot'" />
+    <UILoadingBar v-if="name == 'LoadingBar'" />
   </div>
 </template>
 
@@ -13,14 +15,17 @@ import UICalculator from '@/components/Pc/UI/Calculator.vue'
 import UISwitch from '@/components/Pc/UI/Switch.vue'
 import UIShare from '@/components/Pc/UI/Share.vue'
 import UIProductCard from '@/components/Pc/UI/ProductCard.vue'
-
+import UILoadingDot from '@/components/Pc/UI/LoadingDot.vue'
+import UILoadingBar from '@/components/Pc/UI/LoadingBar.vue'
 export default {
   name: 'DemoUI',
   components: {
     UICalculator,
     UISwitch,
     UIShare,
-    UIProductCard
+    UIProductCard,
+    UILoadingDot,
+    UILoadingBar
   },
   props: {
     name: {

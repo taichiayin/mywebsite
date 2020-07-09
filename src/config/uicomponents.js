@@ -22,5 +22,17 @@ export const data = [
     poster: 'img/components/Productcard.jpg',
     desc: 'Product Card',
     date: '2020/07/09'
+  },
+  {
+    name: 'LoadingDot',
+    poster: 'img/components/LoadingDot.jpg',
+    desc: 'LoadingDot',
+    date: '2020/07/09'
+  },
+  {
+    name: 'LoadingBar',
+    poster: 'https://fakeimg.pl/750x760/?text=LoadingBar&font=lobster',
+    desc: 'LoadingBar',
+    date: '2020/07/09'
   }
 ]
