@@ -19,8 +19,8 @@ export const data = [
   },
   {
     name: 'ProductCard',
-    poster: 'https://fakeimg.pl/750x760/?text=ProductCard&font=lobster',
+    poster: 'img/components/Productcard.jpg',
     desc: 'Product Card',
-    date: '2020/07/08'
+    date: '2020/07/09'
   }
 ]
